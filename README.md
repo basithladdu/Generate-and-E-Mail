@@ -1,50 +1,27 @@
-# Bulk Offer Letter Generator and Certificate Verifier
+# ✉️ Bulk Offer Letter & Certificate Verifier (UQR)
 
-This project is designed to streamline the process of generating offer letters in bulk for interns and verifying their certificates using a Flask-based API. It uses a SQLite database to store intern details and provides an API endpoint for certificate verification.
+Generates bulk intern offer letters and verifies certificates via a Flask API. Uses SQLite for data storage.
 
----
+**✨ Features:** Bulk letter generation, certificate verification API (`/verify`), SQLite database.
 
-## Features
+**⚙️ Files:**
+- `verify_api.py`: Flask API for certificate verification.
+- `database.py`: Initializes the `interns` SQLite database.
+- `offer_letter_generator.py` (To be Implemented): Generates bulk offer letters.
 
-1. **Bulk Offer Letter Generation**:
-   - Automates the creation of offer letters for multiple interns.
-   - Uses a predefined template to generate personalized letters.
+**🚀 Usage:**
+1. `git clone <repository-url>`
+2. `cd uqr`
+3. `pip install flask`
+4. `python database.py`
+5. `python verify_api.py` (API at `http://127.0.0.1:5000/verify?code=<unique_code>`)
 
-2. **Certificate Verification API**:
-   - Provides a `/verify` endpoint to validate certificates using a unique code.
-   - Returns intern details if the certificate is valid.
+**🛠️ Future:** Implement letter generator, email sending, API enhancements.
 
-3. **SQLite Database**:
-   - Stores intern details such as name, email, date, status, and unique code.
+**📄 License:** MIT License.
 
----
+**🤝 Contribute:** Fork and submit pull requests.
 
-## File Descriptions
+**📧 Contact:** Reach out for questions/feedback.
 
-### 1. `verify_api.py`
-- **Purpose**: A Flask-based API to verify certificates.
-- **Key Features**:
-  - Connects to a SQLite database (`interns.db`).
-  - Fetches intern details based on a unique code.
-  - Returns a JSON response indicating whether the certificate is valid.
-
-### 2. `database.py`
-- **Purpose**: Initializes the SQLite database and creates the `interns` table.
-- **Key Features**:
-  - Sets up the database schema for storing intern details.
-
-### 3. `offer_letter_generator.py` (to be implemented)
-- **Purpose**: Generates offer letters in bulk for interns.
-- **Key Features**:
-  - Reads intern details from the database.
-  - Uses a template to create personalized offer letters.
-  - Saves the letters as PDF or Word documents.
-
----
-
-## How to Clone and Use This Project
-
-### Step 1: Clone the Repository
-Clone the repository to your local machine:
-```bash
-git clone <repository-url>
+**📝 To Add README:** Save as `README.md` in `uqr`, then `git add README.md`, `git commit -m "Added README"`, `git push`.
