@@ -10,7 +10,7 @@ Generates bulk intern offer letters and verifies certificates via a Flask API. U
 - `offer_letter_generator.py` (To be Implemented): Generates bulk offer letters.
 
 **🚀 Usage:**
-1. `git clone <repository-url>`
+1. `git clone https://github.com/basithladdu/Generate-and-E-Mail`
 2. `cd uqr`
 3. `pip install flask`
 4. `python database.py`
